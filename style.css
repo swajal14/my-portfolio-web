@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F7F8F0
+}
+
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+    opacity: 80%;
+    position: fixed;
+    align-items: center ;
+    display: flex;
+    top: 0;justify-content: space-between;
+ 
+
+
+}
+.logo{
+    margin-left: 20px;
+    width: 70px;
+}
+ul li {
+   list-style: none;
+   display: inline;
+   margin-left: 10px;
+   padding: 10px;
+   font-size: 20px;
+   margin-right: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.aboutme{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.aboutme-text{
+    width: 60%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutme-text h1{
+    font-size: 42px;
+    margin-bottom: 0;
+    }
+    .aboutme-text h3{
+        font-size: 52px;
+        margin-bottom: 0;
+        }
+        .aboutme-text h4{
+            font-size: 42px;
+            margin-bottom: 0;
+        }
+.aboutme-img{
+    width: 40%;
+  
+    }
+    .aboutme-img img{
+        width: 75%;
+    }
+
+    .hireme{
+        border: none;
+        width: 170px;
+        height: 50px;
+        color: white;
+        background-color: rgb(200, 102, 208);
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+
+    .hireme:hover{
+        background-color: blueviolet;
+        transition: 0.1s all;
+    }
+
+      .getcv{
+        border: none;
+        width: 170px;
+        height: 50px;
+        color: white;
+        background-color: rgb(200, 102, 208);
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+
+    .getcv:hover{
+        background-color: blueviolet;
+        transition: 0.1s all;
+    }
+
+    .intro-text{
+        width: 60%;
+       
+    }
+    .intro-text h1{
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    
+
+    }
+     .intro-text p{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    
+    }
+    .intro-img{
+      width: 40%;
+      box-sizing: border-box;
+    }
+    .intro-img img{
+        width: 80%;
+       
+    }
+    .services{
+        margin-top: 20px;
+
+    }
+    .services h1{
+        text-align: center;
+        font-size: 42px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+     .services p{
+        text-align: center;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+       color: gray;
+       margin: auto;
+       width: 40%;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    .card{
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+        background-color: #9CD5FF;
+       text-align: center;
+       padding: 40px 20px 20px;
+       box-sizing: border-box;
+    }
+    .card:hover{
+   
+        background-color: #B3BFFF;
+    }
+    .projects{
+        margin-top: 50px;
+    }
+        .projects h1{
+            text-align: center;
+        }
+        
+        .project-card{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        .contact{
+
+            width: 70%;
+            height: 400px;
+            background-color:#7AAACE;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 50px;
+          
+        }
+
+        .contact input{
+
+            width: 40%;
+            height: 40px;
+            border:none;
+            border-radius: 5px;
+            margin-right: 10px; 
+
+           
+        }
+
+        .contact button{
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            color: white ;
+            cursor: pointer;
+            background-color:dodgerblue;
+    
+            
+
+        }
+         .contact button:hover{
+            background-color: rgb(17, 123, 229);
+         }
+        footer{
+            margin-top: 100px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+
+        }
+
+        .logo-size{
+            width: 25%;
+
+        
+            
+            
+        }
