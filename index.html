@@ -7,37 +7,42 @@
     <title>My Portfolio - Swajal</title>
 </head>
 <body>
+    <!-- CSS-only interactive background -->
+    <div class="bg-anim" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
     <header>
         <img src="assests/Black White Minimalist Modern Aesthetic Initials Font Logo.png"  alt="logo" class="logo"/>
         <ul>
-            <li>Home</li>
-            <li>Education</li>
-            <li>Experience</li>
-            <li>Contact</li>
+            <li class="nav-item" data-target="aboutme">Home</li>
+            <li class="nav-item" data-target="intro">Education</li>
+            <li class="nav-item" data-target="services">Experience</li>
+            <li class="nav-item" data-target="contact">Contact</li>
         </ul>
     </header>
 
 <div class="main">
-      <div class="aboutme">
+    <div class="aboutme" id="aboutme">
            <div class="aboutme-text">
-                <h3>Hello</h3>
+                <h3>Hi</h3>
                 <h1>I am <br>Swajal Kumar Kachhi</h1>
-                <h4>java full stack Developer</h4>
+                <h4>Java Full Stack Developer</h4>
 
                 <button class="hireme">Hire Me</button>
-                <button class="getcv">Get CV</button>
+                <button class="getcv">Get Resume</button>
            </div>
            <div class="aboutme-img">
-                <img src="assests/vecteezy_ai-generated-3d-rendering-of-a-boy-using-laptop-while_35576095.png" alt="dp">
+                <img src="assests/My Pic.jpeg" class="my-pic" alt="dp">
 
            </div>
       </div>
 
 </div>
     <div>
-        <div class="aboutme intro">
+        <div class="aboutme intro" id="intro">
            <div class="intro-img">
-               <img src="assests/about-us.png" alt="dp">
+               <img src="assests/DSC04329.JPG" alt="dp">
            </div>
             <div class="intro-text">
             <h1>let’s Introduce about myself</h1>
@@ -48,12 +53,12 @@
              I am highly motivated to learn from experienced mentors and am excited to apply
              my knowledge to real-world challenges .
              </p>   
-             <button class="getcv" style="margin-left:0 ;">DOWNLOAD CV</button>
+             <button class="getcv" style="margin-left:0 ;">DOWNLOAD RESUME</button>
              </div>
         </div>
 
 
-           <div class="services">
+           <div class="services" id="services">
 
                 <h1>Services offers</h1>
                 <p>Design, build, and maintain fast, secure, and user-friendly websites tailored to your business goals.
@@ -69,9 +74,8 @@
 
                     <div class="card">
                         <img src="assests/s2.png" alt="itm"> 
-                        <h2>UI/ux design</h2>
-                        <p style="width: 100%;">Designing visually appealing UI and user-centric UX to create engaging and high-performing websites.
-                        </p>
+                        <h2>Frontend design</h2>
+                        <p style="width: 100%;">Designing visually appealing UI 
                      </div>
                      
                      <div class="card">
@@ -80,37 +84,26 @@
                         <p style="width: 100%;">Crafting elegant and user-friendly web designs for impactful online presence.
                         </p>
                      </div>
-                     
-                     <div class="card">
-                        <img src="assests/s4.png" alt="itm"> 
-                        <h2>seo optimize</h2>
-                        <p style="width: 100%;">Optimizing websites to improve search engine visibility and organic traffic.
-                        </p>
-                     </div>
+                    
 
                 </div>
            
              </div>
     
 
-             <div class="projects">
+             <div class="projects" id="projects">
                 <h1>Quality Projects</h1>
 
                 <div class="card-container">
 
                     <div class="project-card" >
-                        <img src="assests/p5.jpg" alt="project" >
+                        <img src="assests/Copilot_20260521_152954.png" alt="project" >
 
-                        <h2> Multiply Fowl</h2>
-                        <p> Animated, Portfolio </p>
+                        <h2>Certificate Verification System using Blockchain</h2>
+                        <p> Frontend Development </p>
                     </div>
 
-                    <div class="project-card" >
-                        <img src="assests/p5.jpg" alt="project" >
-
-                        <h2> Multiply Fowl</h2>
-                        <p> Animated, Portfolio </p>
-                    </div>
+                   
 
                     <div class="project-card" >
                         <img src="assests/p5.jpg" alt="project" >
@@ -127,16 +120,38 @@
              </div>
     </div>
 
-     <div class="contact">
-        <input type="email" placeholder="Enter Your Email"/><button>send</button>
+     <div class="contact" id="contact">
+        <input id="contact-email" type="email" placeholder="Enter Your Email"/><button id="contact-send">send</button>
      </div>
 
-     <footer>
-        <img class="logo-size" src="assests/Black White Minimalist Modern Aesthetic Initials Font Logo.png" alt="logo">
-        <h2> Follow Me</h2>
+    <!-- Modal overlay -->
+    <div id="modal-overlay" class="hidden">
+        <div id="contact-modal" class="modal">
+            <button class="modal-close">×</button>
+            <h2>Contact Me</h2>
+            <input id="modal-email" type="email" placeholder="Your email" />
+            <textarea id="modal-message" placeholder="Your message" rows="4"></textarea>
+            <button id="modal-send">Send Message</button>
+            <p id="modal-feedback" class="muted"></p>
+        </div>
 
-        <p>Copyright ©2026 All rights reserved</p>
-     </footer>
-   
-</body>
-</html>
+        <div id="cv-modal" class="modal">
+            <button class="modal-close">×</button>
+            <h2>Download CV</h2>
+            <p>Preview of generated CV. Click Download to save a text copy.</p>
+            <pre id="cv-preview"></pre>
+            <button id="download-cv">Download CV</button>
+        </div>
+    </div>
+
+         <footer>
+                <img class="logo-size" src="assests/Black White Minimalist Modern Aesthetic Initials Font Logo.png" alt="logo">
+                <h2> Follow Me</h2>
+
+                <p>Copyright ©2026 All rights reserved</p>
+         </footer>
+
+
+
+    </body>
+    </html>
